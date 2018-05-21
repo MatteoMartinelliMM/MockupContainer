@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif"
+        android:text="Recupera password"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/title_separator"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:background="@color/gray_child" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_separator"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Inserisci la UserID e l'indirizzo email"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hint"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="USERID" />
+
+    <EditText
+        android:id="@+id/user_id_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/user_id"
+        android:inputType="textPersonName"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_id_et"
+        android:layout_centerHorizontal="true"
+        android:text="INDIRIZZO EMAIL"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/mail_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_bg"
+
+        android:inputType="textPersonName" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btn_separator"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mail_et"
+        android:layout_marginTop="35dp"
+        android:background="@color/gray_child" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_separator"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/blue"
+        android:text="INVIA"
+        android:padding="15dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/layout_end"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_send"
+        android:background="@color/yellow" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/close" />
+
+</RelativeLayout>
